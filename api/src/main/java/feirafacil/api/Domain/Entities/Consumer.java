@@ -6,6 +6,7 @@ import jakarta.persistence.GenerationType;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.data.annotation.Id;
+
 @Getter
 @Setter
 @Entity
@@ -14,7 +15,6 @@ public class Consumer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long Id;
-
     private String name;
     private String email;
     private String cpfOrCnpj;
